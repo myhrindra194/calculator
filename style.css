@@ -40,23 +40,21 @@ main {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
-    
+    justify-content: space-evenly; 
 }
-.bouton, .clear , .delete {
-    width: 6rem;
+button {
     height: 4rem;
     color: white;
     border: hidden;
     font: 1.5rem bold;
+}
+.bouton, .clear ,.delete {
+    width: 6rem;
+    height: 4rem;
     background-color: transparent;
 }
 .equal {
     width: 12rem;
-    height: 4rem;
-    color: white;
-    font: 1.5rem bold;
-    border: hidden;
     background-color: orange;
     border-radius: 5px;
 }
