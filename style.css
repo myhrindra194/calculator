@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    width:30vw ;
+    height: 70vh;
+    margin: 3rem auto;
+    background-color: #0a1028;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px #000;
+}
+.cadre {
+    width: 30vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input {
+    width: 27vw;
+    height: 8vh;
+    color: white;
+    font: 1.5rem bold;
+    text-indent: 10px;
+    background-color: transparent;
+
+}
+.items {
+    width: 27vw;
+    height: 50vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.bouton, .clear , .delete {
+    width: 6rem;
+    height: 4rem;
+    color: white;
+    border: hidden;
+    font: 1.5rem bold;
+    background-color: transparent;
+}
+.equal {
+    width: 12rem;
+    height: 4rem;
+    color: white;
+    font: 1.5rem bold;
+    border: hidden;
+    background-color: orange;
+    border-radius: 5px;
+}
+
