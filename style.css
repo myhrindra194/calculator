@@ -25,12 +25,13 @@ main {
     justify-content: center;
 }
 .input {
-    width: 27vw;
+    width: 26vw;
     height: 8vh;
     color: white;
     font: 1.5rem bold;
     text-indent: 10px;
     background-color: transparent;
+    border-radius: 10px;
 
 }
 .items {
@@ -45,8 +46,10 @@ main {
 button {
     height: 4rem;
     color: white;
-    border: hidden;
+    box-shadow: 1px 3px 5px 1px #000;
     font: 1.5rem bold;
+    border: hidden;
+    border-radius: 5px;
 }
 .bouton, .clear ,.delete {
     width: 6rem;
@@ -54,8 +57,7 @@ button {
     background-color: transparent;
 }
 .equal {
-    width: 12rem;
+    width: 18rem;
     background-color: orange;
-    border-radius: 5px;
 }
 
