@@ -1,6 +1,33 @@
 const input = document.querySelector(".input");
 let equalPress = 0;
 
+/**
+ * en cas de click , on affiche le resultat si c'est calculable et sinon on affiche syntaxe error
+ */
+const onEqualClick = () => {
+    equalPress = 1;
+    try {
+        input.value = eval(input.value);
+    } catch (error) {
+        input.value = "Syntax Error";
+    }
+}
+
+/**
+ * faire le calcul si on tape sur = || ou affiche sur l'ecran sinon
+ * @param {KeyboardEvent} e
+ */
+const onkeydown = (e)=> {
+    if(e.key === "Enter")
+        onEqualClick();
+    else if(["1","2","3","4","5","6","7","8","9","-","+","\\","*"].includes(e.key)){
+        input.value += e.key;
+    }
+}
+
+document.addEventListener("keydown", onkeydown);
+
+
 // reinitialize the input when loaded
 window.onload = () => {
     input.value = ""
@@ -10,7 +37,7 @@ window.onload = () => {
 document.querySelectorAll(".bouton").forEach(btn => {
     btn.addEventListener("click", () => {
         if (equalPress == 1) {
-            input.value = "" ;
+            input.value = "";
             equalPress = 0;
         }
         input.value += btn.value;
@@ -18,12 +45,7 @@ document.querySelectorAll(".bouton").forEach(btn => {
 });
 
 // do the calculations
-document.querySelector(".equal").addEventListener("click", () => {
-    equalPress = 1;
-    let value = input.value;
-    let solution = eval(value);
-        input.value = solution;
-})
+document.querySelector(".equal").addEventListener("click", onEqualClick)
 
 // Clear the input with AC button 
 document.querySelector(".clear").addEventListener("click", () => {
@@ -32,6 +54,6 @@ document.querySelector(".clear").addEventListener("click", () => {
 
 
 // delete tle last digit with DEL button 
-document.querySelector(".delete").addEventListener("click" , () => {
-    input.value = (input.value).substr(0 , input.value.length-1)
+document.querySelector(".delete").addEventListener("click", () => {
+    input.value = (input.value).substr(0, input.value.length - 1)
 })
