@@ -14,15 +14,29 @@ const onEqualClick = () => {
 }
 
 /**
+ * en cas de click ,on efface la derniere valeur entree par l'utilisateur
+ */
+const deleteClick = () => {
+    input.value = input.value.slice(0 ,input.value.length - 1);
+}
+
+/**
  * faire le calcul si on tape sur = || ou affiche sur l'ecran sinon
  * @param {KeyboardEvent} e
  */
-const onkeydown = (e)=> {
+const onkeydown = (e) => {
     if(e.key === "Enter")
         onEqualClick();
+    else if(e.key === "Backspace")
+        deleteClick();
+    else if(e.key === "Delete")
+        input.value = "";
     else if(["1","2","3","4","5","6","7","8","9","-","+","\\","*"].includes(e.key)){
         input.value += e.key;
     }
+    
+    
+
 }
 
 document.addEventListener("keydown", onkeydown);
@@ -54,6 +68,4 @@ document.querySelector(".clear").addEventListener("click", () => {
 
 
 // delete tle last digit with DEL button 
-document.querySelector(".delete").addEventListener("click", () => {
-    input.value = (input.value).substr(0, input.value.length - 1)
-})
+document.querySelector(".delete").addEventListener("click", deleteClick)
