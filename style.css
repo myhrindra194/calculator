@@ -15,6 +15,7 @@ body {
     width: auto;
     max-width: 450px;
     height: 70vh;
+    min-height: 70vh;
     margin: auto;
     border-radius: 15px;
     padding: 10px 20px 20px;
@@ -61,10 +62,12 @@ button {
 
 @media screen and (max-width: 480px){
    .cadre {
+    min-width: 100vw;
     min-height: 100vh;
     border-radius: 0px;
    }
    .buttons {
-    height: 70vh;
+    min-height: 80vh;
    }
+   
 }
