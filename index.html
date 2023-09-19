@@ -6,33 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculatrice</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href=" 	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src=" 	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="main.js" defer></script>
 </head>
 <body>
-    <main>
-       <div class="cadre">
+    <div class="container">
+        <div class="cadre">
             <input type="text" class="input" placeholder="0" disabled>
-       </div>
-       <div class="items ">
-            <button type="button" class="clear">AC</button>
-            <button type="button"class="delete">DEL</button>
-            <button type="button" class="bouton" value="/">/</button>
-            <button type="button" class="bouton" value="*">*</button>
-            <button type="button" class="bouton" value="7">7</button>
-            <button type="button" class="bouton"value="8">8</button>
-            <button type="button" class="bouton" value="9">9</button>
-            <button type="button" class="bouton" value="-">-</button>
-            <button type="button" class="bouton" value="4">4</button>
-            <button type="button" class="bouton" value="5">5</button>
-            <button type="button" class="bouton" value="6">6</button>
-            <button type="button" class="bouton" value="+">+</button>
-            <button type="button" class="bouton" value="1">1</button>
-            <button type="button" class="bouton" value="2">2</button>
-            <button type="button" class="bouton" value="3">3</button>
-            <button type="button" class="bouton" value=".">.</button>
-            <button type="button" class=" bouton" value="0">0</button>
-            <button type="button"class="equal" value="=">=</button>
+
+        <div class="buttons">
+            <button class="clear" type="button" >AC</button>
+            <button class="delete" type="button">DEL</button>
+            <button class="bouton operator" type="button" value="/">/</button>
+            <button class="bouton operator"type="button" value="*">*</button>
+
+            <button class="bouton" type="button" value="7">7</button>
+            <button class="bouton" type="button" value="8">8</button>
+            <button class="bouton" type="button" value="9">9</button>
+            <button class="bouton operator" type="button" value="-">-</button>
+
+            <button class="bouton" type="button" value="4">4</button>
+            <button class="bouton" type="button" value="5">5</button>
+            <button class="bouton" type="button" value="6">6</button>
+            <button class=" bouton operator" type="button" value="+">+</button>
+
+            <button class="bouton" type="button" value="1">1</button>
+            <button class="bouton" type="button" value="2">2</button>
+            <button class="bouton" type="button" value="3">3</button>
+            <button class="bouton operator" type="button" value=".">.</button>
+
+            <button class="bouton" type="button" value="0">0</button>
+            <button class="bouton" type="button" value="00">00</button>
+            <button class=" bouton operator" type="button" value="%">%</button>
+            <button class="equal" type="button" value="=">=</button>
         </div>
-    </main>
+        </div>
+
+    </div>
 </body>
 </html>

@@ -4,60 +4,57 @@
     box-sizing: border-box;
 }
 body {
-    width: 100vw;
-    height: auto;
-    overflow: hidden;
-    font-family: Arial, Helvetica, sans-serif;
-}
-main {
-    width:30vw ;
-    height: 70vh;
-    margin: 3rem auto;
-    background-color: #0a1028;
-    border-radius: 15px;
-    box-shadow: 0px 5px 10px #000;
-}
-.cadre {
-    width: 30vw;
-    height: 15vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.input {
-    width: 26vw;
-    height: 8vh;
-    color: white;
-    font: 1.5rem bold;
-    text-indent: 10px;
-    background-color: transparent;
-    border-radius: 10px;
+.container {
+    width: 100%;
+}
+.cadre {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 15px;
+    padding: 10px 20px 20px;
+    position: relative;
+    background-color: rgb(24, 6, 74);
+    box-shadow: 0 5px 10px #000;
 
 }
-.items {
-    width: 27vw;
-    height: 50vh;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly; 
-}
-button {
-    height: 4rem;
-    color: white;
-    box-shadow: 1px 3px 5px 1px #000;
-    font: 1.5rem bold;
-    border: hidden;
-    border-radius: 5px;
-}
-.bouton, .clear ,.delete {
-    width: 6rem;
-    height: 4rem;
+.input {
+    width: 100%;
+    height: 60px;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
     background-color: transparent;
+    font-size: 20px;
+    outline: none;
+    border: solid 1px white;
+    border-radius: 8px;
+    color: white;
+    text-indent: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+}
+.operator {
+    color: orange;
 }
 .equal {
-    width: 18rem;
     background-color: orange;
 }
-
