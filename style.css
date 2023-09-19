@@ -46,7 +46,7 @@ button {
     padding: 10px;
     border-radius: 10px;
     border: none;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     background-color: transparent;
     cursor: pointer;
@@ -67,7 +67,7 @@ button {
     border-radius: 0px;
    }
    .buttons {
-    min-height: 80vh;
+    min-height: 70vh;
    }
    
 }
