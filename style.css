@@ -3,28 +3,43 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.cadre {
+    background-color: white;
+    
+}
 
 .bouton, .equal {
     border: none;
     background-color: white;
     cursor: pointer;
+    color: grey;
+
 }
 .equal {
-    background-color: blueviolet;
+    background-color: orangered;
     color: white;
     border-radius: 7px;
 }
 .inputValue {
     border: none;
+    text-indent: 7px;
     background-color: white;
-    color: blueviolet;
+    color: grey;
     font-weight: bold;
 
 }
 .operator {
-    color: blueviolet;
+    color: orangered;
 }
+.content {
+    width: auto;
+    height: 100vh;
+    background:linear-gradient(-45deg, #EB3349 0%, 
+    #F45C43 100%);
+
+}
+
+
 
 
 
