@@ -3,71 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(24, 6, 74);
-}
 
-.cadre {
-    width: auto;
-    max-width: 450px;
-    height: 70vh;
-    min-height: 70vh;
-    margin: auto;
-    border-radius: 15px;
-    padding: 10px 20px 20px;
-    position: relative;
-    background-color: rgb(24, 6, 74);
-    box-shadow: 0 5px 10px #000;
 
-}
-.input {
-    width: 100%;
-    height: 3rem;
-    margin:1rem 0rem;
-    font-size: 20px;
+.bouton, .equal {
     border: none;
-    border-radius: 8px;
-    color: white;
-    text-indent: 1rem;
-}
-
-.buttons {
-    height: 50vh;
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-button {
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    font-size: 25px;
-    font-weight: bold;
-    background-color: transparent;
+    background-color: white;
     cursor: pointer;
-    color: white;
-}
-
-.operator {
-    color: orange;
 }
 .equal {
-    background-color: orange;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 7px;
+}
+.inputValue {
+    border: none;
+    background-color: white;
+    color: blueviolet;
+    font-weight: bold;
+
+}
+.operator {
+    color: blueviolet;
 }
 
-@media screen and (max-width: 480px){
-   .cadre {
-    min-width: 100vw;
-    min-height: 100vh;
-    border-radius: 0px;
-   }
-   .buttons {
-    min-height: 70vh;
-   }
-   
-}
+
+
