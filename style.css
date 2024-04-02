@@ -106,7 +106,7 @@
     font-size: 1.5rem;
   }
 }
-@media (max-width: 330px) {
+@media (max-width: 350px) {
   .mydiv {
     display: flex;
     justify-content: center;
@@ -127,14 +127,14 @@
 
   .bouton,
   .equal {
-    width: 3.3rem;
-    height: 3.3rem;
-    font-size: 1.4rem;
+    width: 20vw;
+    height: 10vh;
+    font-size: 1.5rem;
   }
   .inputGroupValue {
     box-shadow: 0 0 0;
   }
   .inputValue {
-    font-size: 1.4 rem;
+    font-size: 1.5rem;
   }
 }
