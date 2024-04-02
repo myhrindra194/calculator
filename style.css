@@ -35,8 +35,8 @@
   box-shadow: 0 0 8px rgb(207, 207, 207);
 }
 .inputGroupValue {
-  box-shadow: 0 0 5px rgb(207, 207, 207);
-  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(207, 207, 207);
+  border-radius: 10px;
 }
 
 .bouton,
@@ -84,11 +84,15 @@
 @media (max-width: 576px) {
   body {
     max-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
   .content {
     background: white;
   }
-
+  .space {
+    margin-top: 4rem;
+  }
   .bouton,
   .equal {
     width: 8rem;
