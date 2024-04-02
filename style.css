@@ -87,17 +87,25 @@
   .content {
     background: white;
   }
+  .mydiv {
+    display: flex;
+    align-items: flex-end;
+  }
   .inputGroupValue {
     box-shadow: 0 0 0;
   }
   .space {
+    max-height: 80vh;
     border-top: solid 1px rgb(231, 230, 230);
-    margin-top: 4.3rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
   }
   .bouton,
   .equal {
-    width: 8rem;
-    font-size: 2rem;
+    width: 7rem;
+    font-size: 1.8rem;
   }
   .inputValue {
     font-size: 2rem;
