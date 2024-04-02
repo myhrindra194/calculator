@@ -31,9 +31,12 @@
   align-items: center;
 }
 
-.bouton,
+.bouton {
+  box-shadow: 0 0 8px rgb(207, 207, 207);
+}
 .inputGroupValue {
-  box-shadow: 0 0 10px rgb(207, 207, 207);
+  box-shadow: 0 0 5px rgb(207, 207, 207);
+  border-radius: 5px;
 }
 
 .bouton,
@@ -79,6 +82,13 @@
   }
 }
 @media (max-width: 576px) {
+  body {
+    max-height: 100vh;
+  }
+  .content {
+    background: white;
+  }
+
   .bouton,
   .equal {
     width: 8rem;
@@ -86,56 +96,5 @@
   }
   .inputValue {
     font-size: 2rem;
-  }
-}
-@media (max-width: 400px) {
-  .content {
-    background: white;
-  }
-  .cadre {
-    box-shadow: 0 0 0;
-  }
-  .bouton,
-  .equal {
-    width: 5rem;
-    height: 5rem;
-    font-size: 1.5rem;
-    border-radius: 50%;
-  }
-  .inputValue {
-    font-size: 1.5rem;
-  }
-}
-@media (max-width: 350px) {
-  .mydiv {
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    padding: 0;
-    margin: 0;
-  }
-  .space {
-    min-height: 40vh;
-    position: absolute;
-    border-top: solid 1px rgb(238, 238, 238);
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-  .cadre {
-    box-shadow: none;
-  }
-
-  .bouton,
-  .equal {
-    width: 4rem;
-    height: 4rem;
-    font-size: 1.5rem;
-  }
-  .inputGroupValue {
-    box-shadow: 0 0 0;
-  }
-  .inputValue {
-    font-size: 1.5rem;
   }
 }
