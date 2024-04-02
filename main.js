@@ -31,12 +31,9 @@ const onkeydown = (e) => {
         deleteClick();
     else if(e.key === "Delete")
         input.value = "";
-    else if(["1","2","3","4","5","6","7","8","9","-","+","\\","*"].includes(e.key)){
+    else if(["1","2","3","4","5","6","7","8","9","-","+","\\","*","."].includes(e.key)){
         input.value += e.key;
     }
-    
-    
-
 }
 
 document.addEventListener("keydown", onkeydown);
@@ -55,6 +52,8 @@ document.querySelectorAll(".bouton").forEach(btn => {
             equalPress = 0;
         }
         input.value += btn.value;
+        btn.classList.add("clicked-btn");
+        setTimeout(() => btn.classList.remove("clicked-btn"), 200);
     })
 });
 
@@ -65,7 +64,6 @@ document.querySelector(".equal").addEventListener("click", onEqualClick)
 document.querySelector(".clear").addEventListener("click", () => {
     input.value = "";
 })
-
 
 // delete tle last digit with DEL button 
 document.querySelector(".delete").addEventListener("click", deleteClick)

@@ -1,45 +1,140 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+.content {
+  width: auto;
+  height: 100vh;
+  background: #ee0979;
+  background: -webkit-linear-gradient(to bottom, #ff6a00, #ee0979);
+  background: -moz-linear-gradient(to bottom, #ff6a00, #ee0979);
+  background: -o-linear-gradient(to bottom, #ff6a00, #ee0979);
+  background: -ms-linear-gradient(to bottom, #ff6a00, #ee0979);
+  background: linear-gradient(to bottom, #ff6a00, #ee0979);
+}
+
 .cadre {
-    background-color: white;
-    
+  background-color: white;
 }
 
-.bouton, .equal {
-    border: none;
-    background-color: white;
-    cursor: pointer;
-    color: grey;
+.bouton,
+.equal {
+  width: 5rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.7rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.bouton,
+.inputGroupValue {
+  box-shadow: 0 0 10px rgb(207, 207, 207);
+}
+
+.bouton,
+.inputValue {
+  background-color: white;
+  color: grey;
+}
+
+.bouton {
+  cursor: pointer;
+}
+
+.inputValue {
+  border: none;
+  text-indent: 7px;
+  font-size: 1.7rem;
 }
 .equal {
-    background-color: orangered;
-    color: white;
-    border-radius: 7px;
-}
-.inputValue {
-    border: none;
-    text-indent: 7px;
-    background-color: white;
-    color: grey;
-    font-weight: bold;
-
-}
-.operator {
-    color: orangered;
-}
-.content {
-    width: auto;
-    height: 100vh;
-    background:linear-gradient(-45deg, #EB3349 0%, 
-    #F45C43 100%);
-
+  color: white;
+  background-color: #ff6a00;
 }
 
+.operator,
+.clear {
+  font-weight: bold;
+}
+.clear {
+  color: #ff6a00;
+}
 
+.clicked-btn {
+  box-shadow: 0 0 3px rgb(207, 207, 207);
+  background-color: rgb(231, 231, 231);
+  color: rgb(40, 40, 40);
+  font-size: 95%;
+}
 
+@media (max-width: 1200px) {
+  .bouton,
+  .equal {
+    width: 6rem;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .bouton,
+  .equal {
+    width: 8rem;
+    font-size: 2rem;
+  }
+  .inputValue {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 400px) {
+  .content {
+    background: white;
+  }
+  .cadre {
+    box-shadow: 0 0 0;
+  }
+  .bouton,
+  .equal {
+    width: 5rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    border-radius: 50%;
+  }
+  .inputValue {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 330px) {
+  .mydiv {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+  .space {
+    min-height: 50vh;
+    position: absolute;
+    border-top: solid 1px rgb(238, 238, 238);
+    margin: 0 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .cadre {
+    box-shadow: none;
+  }
 
-
+  .bouton,
+  .equal {
+    width: 3.3rem;
+    height: 3.3rem;
+    font-size: 1.4rem;
+  }
+  .inputGroupValue {
+    box-shadow: 0 0 0;
+  }
+  .inputValue {
+    font-size: 1.4 rem;
+  }
+}
